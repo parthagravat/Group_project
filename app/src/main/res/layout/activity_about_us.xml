@@ -5,30 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
+    android:paddingRight="20dp"
     tools:context=".AboutUs">
 
     <TextView
-        android:id="@+id/txtAboutus"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtname2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:text="@string/name3"
+        android:textColor="@color/cntTxtColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@+id/txtmem"
+        app:layout_constraintTop_toBottomOf="@+id/txtname1" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:gravity="right"
+        android:text="@string/name2"
+        android:textColor="@color/cntTxtColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/txtmem"
+        app:layout_constraintTop_toBottomOf="@+id/txtname2" />
+
+    <TextView
+        android:id="@+id/txtAboutus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal"
         android:text="@string/Abouus"
-        android:textColor="@android:color/holo_purple"
+        android:textColor="@color/txtColot"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/txtmem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="220dp"
         android:text="@string/mem"
-        android:textColor="?attr/colorAccent"
+        android:textColor="@color/txtColot"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,12 +70,13 @@
         android:id="@+id/txtclg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="192dp"
         android:text="@string/collage"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/txtColot"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtmem" />
 
@@ -49,83 +84,60 @@
         android:id="@+id/txtdep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="64dp"
         android:text="@string/department"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/txtColot"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtclg" />
 
-
     <TextView
         android:id="@+id/txtname1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="104dp"
+        android:gravity="right"
         android:text="@string/name1"
-        android:textColor="@android:color/holo_red_light"
+        android:textColor="@color/cntTxtColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toEndOf="@+id/txtmem"
         app:layout_constraintTop_toBottomOf="@+id/txtAboutus" />
 
     <TextView
-            android:id="@+id/txtname2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:text="@string/name2"
-            android:textColor="@android:color/holo_red_light"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.687"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtname1" />
+        android:id="@+id/txtclgname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="96dp"
+        android:gravity="right"
+        android:text="@string/clgname"
+        android:textColor="@color/cntTxtColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/txtclg"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
 
-        <TextView
-            android:id="@+id/txtame3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/name3"
-            android:textColor="@android:color/holo_red_light"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.757"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtname2" />
-
-        <TextView
-            android:id="@+id/txtclgname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="78dp"
-            android:layout_marginTop="72dp"
-            android:text="@string/clgname"
-            android:textColor="@android:color/holo_red_light"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.112"
-            app:layout_constraintStart_toEndOf="@+id/txtclg"
-            app:layout_constraintTop_toBottomOf="@+id/txtame3" />
-
-        <TextView
-            android:id="@+id/txtdepname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="42dp"
-            android:layout_marginTop="104dp"
-            android:text="@string/departmentname"
-            android:textColor="@android:color/holo_red_light"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.105"
-            app:layout_constraintStart_toEndOf="@+id/txtdep"
-            app:layout_constraintTop_toBottomOf="@+id/txtclgname" />
+    <TextView
+        android:id="@+id/txtdepname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:gravity="right"
+        android:text="@string/departmentname"
+        android:textColor="@color/cntTxtColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toEndOf="@+id/txtdep"
+        app:layout_constraintTop_toBottomOf="@+id/txtclgname" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

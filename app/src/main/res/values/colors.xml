@@ -9,4 +9,5 @@
     <color name="divider">#BDBDBD</color>
     <color name="back">#ffd740</color>
     <color name="txtColot">#61615F</color>
+    <color name="cntTxtColor">#000CFF</color>
 </resources>
