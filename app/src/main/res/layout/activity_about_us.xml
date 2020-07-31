@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back"
+    android:background="@android:color/white"
     android:paddingRight="20dp"
     tools:context=".AboutUs">
 
@@ -38,31 +38,32 @@
         app:layout_constraintStart_toEndOf="@+id/txtmem"
         app:layout_constraintTop_toBottomOf="@+id/txtname2" />
 
+
     <TextView
         android:id="@+id/txtAboutus"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="56dp"
         android:gravity="center_horizontal"
         android:text="@string/Abouus"
-        android:textColor="@color/txtColot"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/txtmem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="148dp"
+        android:gravity="left"
         android:text="@string/mem"
-        android:textColor="@color/txtColot"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,12 +72,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="152dp"
+        android:gravity="left"
         android:text="@string/collage"
-        android:textColor="@color/txtColot"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtmem" />
 
@@ -85,12 +87,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
         android:text="@string/department"
-        android:textColor="@color/txtColot"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtclg" />
 
@@ -99,13 +102,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="60dp"
         android:gravity="right"
         android:text="@string/name1"
         android:textColor="@color/cntTxtColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/txtmem"
         app:layout_constraintTop_toBottomOf="@+id/txtAboutus" />
 
@@ -114,13 +117,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="44dp"
         android:gravity="right"
         android:text="@string/clgname"
         android:textColor="@color/cntTxtColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/txtclg"
         app:layout_constraintTop_toBottomOf="@+id/txtname" />
 
@@ -129,13 +132,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="48dp"
         android:gravity="right"
         android:text="@string/departmentname"
         android:textColor="@color/cntTxtColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/txtdep"
         app:layout_constraintTop_toBottomOf="@+id/txtclgname" />
 
