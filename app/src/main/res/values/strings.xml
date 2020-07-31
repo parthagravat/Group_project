@@ -12,4 +12,13 @@
     <string name="fname">First Name</string>
     <string name="lname">Last Name</string>
     <string name="register">Register</string>
+    <string name="Abouus">About Us</string>
+    <string name="mem">Members :</string>
+    <string name="name1">Parth Agravat</string>
+    <string name="name2">Harshiv Chag</string>
+    <string name="name3">Ruturajsinh Gohil</string>
+    <string name="collage">Collage :</string>
+    <string name="clgname">R K University</string>
+    <string name="department">Department :</string>
+    <string name="departmentname">SOE CE/IT</string>
 </resources>
