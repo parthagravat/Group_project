@@ -1,146 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:paddingRight="20dp"
-    tools:context=".AboutUs">
+    tools:context=".contactUs">
 
-    <TextView
-        android:id="@+id/txtname2"
-        android:layout_width="0dp"
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="32dp"
-        android:gravity="right"
-        android:text="@string/name3"
-        android:textColor="@color/cntTxtColor"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toEndOf="@+id/txtmem"
-        app:layout_constraintTop_toBottomOf="@+id/txtname1" />
+        android:background="@drawable/grad"
+        android:paddingBottom="20dp"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/txtname"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="28dp"
-        android:gravity="right"
-        android:text="@string/name2"
-        android:textColor="@color/cntTxtColor"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toEndOf="@+id/txtmem"
-        app:layout_constraintTop_toBottomOf="@+id/txtname2" />
+        <RelativeLayout
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            >
+
+<!--            <ImageView-->
+<!--               -->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_marginStart="2dp"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:layout_marginEnd="2dp"-->
+<!--                android:layout_marginBottom="2dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:padding="3dp"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:src="@drawable/atlas" />-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/atlas"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorPrimary"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUser"
+            android:layout_centerHorizontal="true"
+            android:text="Contact Us"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rellay1"
+        android:layout_marginTop="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image1"
+                        android:layout_width="86dp"
+                        android:layout_height="86dp"
+                        android:src="@drawable/harshiv"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="#707570"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harshiv Deepak Chag"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19SOECE13024"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5CEB"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image2"
+                        android:layout_width="86dp"
+                        android:layout_height="86dp"
+                        android:src="@drawable/ruturaj"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="#707570"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ruturajsinh Gohil"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19SOEIT13007"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5IT2"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image3"
+                        android:layout_width="86dp"
+                        android:layout_height="86dp"
+                        android:src="@drawable/parth"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="#707570"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parth Agravat"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19SOECE13031"
+                            android:textColor="@color/grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5CEB"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+                </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/txtAboutus"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:gravity="center_horizontal"
-        android:text="@string/Abouus"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtmem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="148dp"
-        android:gravity="left"
-        android:text="@string/mem"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtclg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="152dp"
-        android:gravity="left"
-        android:text="@string/collage"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtmem" />
-
-    <TextView
-        android:id="@+id/txtdep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:gravity="left"
-        android:text="@string/department"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtclg" />
-
-    <TextView
-        android:id="@+id/txtname1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
-        android:gravity="right"
-        android:text="@string/name1"
-        android:textColor="@color/cntTxtColor"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtmem"
-        app:layout_constraintTop_toBottomOf="@+id/txtAboutus" />
-
-    <TextView
-        android:id="@+id/txtclgname"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="44dp"
-        android:gravity="right"
-        android:text="@string/clgname"
-        android:textColor="@color/cntTxtColor"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtclg"
-        app:layout_constraintTop_toBottomOf="@+id/txtname" />
-
-    <TextView
-        android:id="@+id/txtdepname"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="48dp"
-        android:gravity="right"
-        android:text="@string/departmentname"
-        android:textColor="@color/cntTxtColor"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtdep"
-        app:layout_constraintTop_toBottomOf="@+id/txtclgname" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
