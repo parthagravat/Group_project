@@ -15,11 +15,11 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        btnregister = findViewById(R.id.btnregister);
+        btnregister = findViewById(R.id.btnSignup);
         btnregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Signup.this , AboutUs.class);
+                Intent intent = new Intent(Signup.this , contactUs.class);
                 startActivity(intent);
             }
         });
