@@ -142,7 +142,7 @@
                         android:drawablePadding="8dp"
                         android:ems="10"
                         android:hint="@string/email"
-                        android:inputType="number"
+                        android:inputType="textEmailAddress"
                         android:textColor="@color/txtColot"
                         android:textColorHint="@color/grey"/>
 
