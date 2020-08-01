@@ -122,7 +122,7 @@
                         android:id="@+id/profile_image2"
                         android:layout_width="86dp"
                         android:layout_height="86dp"
-                        android:src="@drawable/ruturaj"
+                        android:src="@drawable/harshiv"
                         app:civ_border_width="1dp"
                         app:civ_border_color="#707570"/>
 
@@ -161,7 +161,7 @@
                         android:id="@+id/profile_image3"
                         android:layout_width="86dp"
                         android:layout_height="86dp"
-                        android:src="@drawable/parth"
+                        android:src="@drawable/harshiv"
                         app:civ_border_width="1dp"
                         app:civ_border_color="#707570"/>
 

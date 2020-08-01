@@ -88,7 +88,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/signup"
-        android:shadowColor="@android:color/transparent"
+
         android:text="@string/signup"
         android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
